@@ -5,7 +5,7 @@ session_start();
 // check if the user is already logged in
 if(isset($_SESSION['username']))
 {
-    header("location: welcome.php");
+    header("location: dashboard.php");
     exit;
 }
 require_once "config.php";
@@ -49,8 +49,8 @@ if(empty($err))
                             $_SESSION["id"] = $id;
                             $_SESSION["loggedin"] = true;
 
-                            //Redirect user to welcome page
-                            header("location: welcome.php");
+                            //Redirect user to dashboard page
+                            header("location: dashboard.php");
                             
                         }
                     }
