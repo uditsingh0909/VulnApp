@@ -145,7 +145,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                   </div>
                   <form action="" method="post" class="user">
                     <div class="form-group">
-                      <input type="text" name="username" class="form-control form-control-user" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username or email address...">
+                      <input type="text" name="username" class="form-control form-control-user" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
                     </div>
                     <div class="form-group">
                       <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword1" placeholder="Password">
