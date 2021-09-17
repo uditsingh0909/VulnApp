@@ -143,17 +143,17 @@ mysqli_close($conn);
                                 <div class="form-group row">
                                 </div>
                                 <div class="form-group">
-                                <input type="text" name="username" class="form-control form-control-user" id="InputUsername" aria-describedby="emailHelp" placeholder="Enter username">
+                                <input type="text" name="username" class="form-control form-control-user" id="username" aria-describedby="emailHelp" placeholder="Enter username">
                                 </div>
                                 <div class="form-group">
-                                <input type="text" name="email" class="form-control form-control-user" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+                                <input type="text" name="email" class="form-control form-control-user" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" name="password" class="form-control form-control-user" id="InputPassword" placeholder="Enter Password">
+                                        <input type="password" name="password" class="form-control form-control-user" id="password" placeholder="Enter Password">
                                     </div>
                                     <div class="col-sm-6">
-                                    <input type="password" name="confirm_password" class="form-control form-control-user" id=RepeatPassword" placeholder="Repeat Password">
+                                    <input type="password" name="confirm_password" class="form-control form-control-user" id=confirm_password" placeholder="Repeat Password">
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-user btn-block">Sign Up</button>
