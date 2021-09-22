@@ -139,7 +139,7 @@ mysqli_close($conn);
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4"><b>Create an Account!</b></h1>
                             </div>
-                            <form class="user">
+                            <form action="" class="user">
                                 <div class="form-group row">
                                 </div>
                                 <div class="form-group">
