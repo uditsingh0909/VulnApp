@@ -1,4 +1,4 @@
--<?php
+<?php
 require_once "config.php";
 
 $username = $password = $confirm_password = $email = "";
@@ -50,9 +50,7 @@ elseif(strlen(trim($_POST['password'])) < 5){
 else{
     $password = trim($_POST['password']);
 }
-if(empty(trim($_POST['email']))){
-    $email_err = "email cannot be blank";
-}
+
 // Check for confirm password field
 if(trim($_POST['password']) !=  trim($_POST['confirm_password'])){
     $password_err = "Passwords should match";
@@ -60,18 +58,18 @@ if(trim($_POST['password']) !=  trim($_POST['confirm_password'])){
 
 
 // If there were no errors, go ahead and insert into the database
-if(empty($username_err) && empty($password_err) && empty($confirm_password_err) && empty($email))
+if(empty($username_err) && empty($email_err) && empty($password_err) && empty($confirm_password_err))
 {
-    $sql = "INSERT INTO users (username, password,email) VALUES (?, ?,?)";
+    $sql = "INSERT INTO users (username, password, email) VALUES (?, ?, ?)";
     $stmt = mysqli_prepare($conn, $sql);
     if ($stmt)
     {
-        mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password, $param_email);
+        mysqli_stmt_bind_param($stmt, "sss", $param_username, $param_password, $param_email);
 
         // Set these parameters
         $param_username = $username;
-        $param_email = $email;
         $param_password = password_hash($password, PASSWORD_DEFAULT);
+        $param_email = $_POST['email'];
 
         // Try to execute the query
         if (mysqli_stmt_execute($stmt))
@@ -139,7 +137,7 @@ mysqli_close($conn);
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4"><b>Create an Account!</b></h1>
                             </div>
-                            <form action="" class="user">
+                            <form action="" method="post" class="user">
                                 <div class="form-group row">
                                 </div>
                                 <div class="form-group">
