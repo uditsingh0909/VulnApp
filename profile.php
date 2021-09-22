@@ -359,10 +359,44 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 
                 </nav>
                 <!-- End of Topbar -->
-
-
-
+<div class="container-fluid">
+  <h1 class="h3 mb-4 text-gray-800"><b>My Profile</b></h1>
+  <form action="https://app.hackerctf.com/user/my_profile_action/" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
+<input type="hidden" name="csrf_test_name" value="59009c1c21993da7d12e2801ac019052">                          
+  <div class="row">
+    <div class="col-lg-8">
+	  	  <div class="card shadow mb-4">
+	    <div class="card-header py-3">
+		  <h6 class="m-0 font-weight-bold text-primary">My Profile</h6>
         </div>
+        <div class="card-body">
+		  		  <input type="hidden" id="base_url" name="base_url" value="https://app.hackerctf.com/">
+		  <div class="row form-group mb-4">
+		    <div class="col-lg-6">
+			  <label><span class="text-danger">*</span> Email Address</label>
+			  <input type="text" name="email_address" value="admin@hackerctf.com" id="email_address" class="form-control">
+			</div>
+			<div class="col-lg-6">
+			  <label>Username</label>
+			  <input type="text" name="username" value="sslpwr_hackerctf_lab" id="username" class="form-control">
+			</div>
+		  </div>
+		  <div class="row form-group mb-4">
+		    <div class="col-lg-6">
+			  <label><span class="text-danger">*</span> First Name</label>
+			  <input type="text" name="first_name" value="HackerCTF" id="first_name" class="form-control">
+			</div>
+			<div class="col-lg-6">
+			  <label><span class="text-danger">*</span> Last Name</label>
+			  <input type="text" name="last_name" value="Admin" id="last_name" class="form-control">
+			</div>
+          <div class="col-lg text-right">
+			  <input type="submit" name="btn_submit_block" value="Save Changes" id="btn_submit_block" class="btn btn-primary mt-2">
+			</div>
+			</div>
+		  </div>
+  </div>
+  </form>
         <!-- End of Content Wrapper -->
 
     </div>
