@@ -29,7 +29,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
 
 </head>
 
@@ -55,6 +55,69 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
                 <!-- Begin Page Content -->
 
             </div>
+            <div class="container">
+  <div class="row">
+    <div class="col-sm">
+    <h1 style="margin-top: 50px"><b>HCTF-VulnApp</b></h1>
+    <p>Web application vulnerablities based CTF Lab. to Learn and enhance your pentesting skills.</p>
+    </div>
+    <div class="col-sm">
+        <a style="margin-top: 70px; margin-left: 200px;" type="button" href="#" class="btn btn-primary btn-lg"><b>Start Now Today!</b></a>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row" style="margin-top: 30px;">
+        <div class="col">
+            <div class="card shadow mb-4">
+                <div class="card-body">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+            </div>
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Things which you can do when you are unsure of how to continue:</h6>
+                </div>
+                <div class="card-body">
+                    If you know a command but you don’t know how to use that particular command then try using manual (man page) by typing “man“ (without the quotes <>). Example: If you know about the “ls” command, then type: man ls. Press “q” to quit the man command.
+                        If you don’t find the man page then the command might be a shell built-in. In this case, use the “help“. Example: “help cd“
+                        Lastly, if you are still stuck somewhere make sure you join our discord server.
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <p style="margin-bottom: 5px;">Web Application</p>
+            <div class="progress md-progress" style="height: 30px">
+                <div class="progress-bar" role="progressbar" style="width: 100%; height: 30px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+            </div>
+            <p style="margin-top: 20px; margin-bottom: 5px;">Programming</p>
+            <div class="progress md-progress" style="height: 30px">
+                <div class="progress-bar" role="progressbar" style="width: 44%; height: 30px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="44">44%</div>
+            </div>
+            <p style="margin-top: 20px; margin-bottom: 5px;">Real World</p>
+            <div class="progress md-progress" style="height: 30px">
+                <div class="progress-bar" role="progressbar" style="width: 20%; height: 30px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="20">20%</div>
+            </div>
+            <p style="margin-top: 20px; margin-bottom: 5px;">CTF</p>
+            <div class="progress md-progress" style="height: 30px">
+                <div class="progress-bar" role="progressbar" style="width: 93%; height: 30px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="93">93%</div>
+            </div>
+            <p style="margin-top: 20px;">Now you are ready to start! Make sure you start with Level 0, linked at the right of this page. Good luck!</p>
+        </div>
+    </div>
+
+</div>
             <!-- End of Main Content -->
 
             <?php
@@ -100,7 +163,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/main.min.js"></script>
 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
