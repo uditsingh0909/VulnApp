@@ -63,11 +63,11 @@ function htmli($data)
 
 <div id="main">
 
-    <h1>HTML Injection - Reflected (GET)</h1>
+    <h1 style="margin-left: 25px;">HTML Injection - Reflected (GET)</h1>
 
-    <p>Enter your first and last name:</p>
+    <p style="margin-left: 25px;">Enter your first and last name:</p>
 
-    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="GET">
+    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="GET"  style="margin-left: 25px;">
 
         <p><label for="firstname">First name:</label><br />
         <input type="text" id="firstname" name="firstname"></p>
