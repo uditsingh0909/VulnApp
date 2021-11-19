@@ -125,11 +125,11 @@ function htmli($data)
     <br />
     <?php
 
-    if(isset($_GET["firstname"]) && isset($_GET["lastname"]))
+    if(isset($_POST["firstname"]) && isset($_POST["lastname"]))
     {
 
-        $firstname = $_GET["firstname"];
-        $lastname = $_GET["lastname"];
+        $firstname = $_POST["firstname"];
+        $lastname = $_POST["lastname"];
 
         if($firstname == "" or $lastname == "")
         {
@@ -141,7 +141,7 @@ function htmli($data)
         else
         {
 
-            echo "Welcome " . htmli($firstname) . " " . htmli($lastname);
+            echo "Welcome " . htmli($firstname) . " " .  htmli($lastname);
 
         }
 
