@@ -102,6 +102,46 @@ function htmli($data)
                     ?>
 
                 </div>
+
+				<div class="mb-6">
+				<div class="col-sm" align="center">
+            		<h1 style="margin-bottom: 20px;"><b>Frequently Asked Questions</b></h1><hr>
+        		</div>
+					<div class="card card-sm card-body rounded mb-3" style="margin-left: 25px; margin-right: 25px;"> 
+						<div data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="h6 mb-0">How to pay?</span><span class="icon" style="margin-left: 10px;"><i class="fas fa-angle-down"></i></span></div>
+						<div class="collapse" id="panel-1">
+							<div class="pt-3">
+								<p class="mb-0">Generally we encourage you to pay online. Of course offline payment is also supported.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card card-sm card-body rounded mb-3" style="margin-left: 25px; margin-right: 25px;">
+						<div data-target="#panel-2" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-2"><span class="h6 mb-0">Do I need to pay monthly?</span><span class="icon" style="margin-left: 10px;"><i class="fas fa-angle-down"></i></span></div>
+						<div class="collapse" id="panel-2">
+							<div class="pt-3">
+								<p class="mb-0">No, it's life-time payment.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/main.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
 </body>
 
 </html>
