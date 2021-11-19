@@ -108,7 +108,7 @@ function commandi($data)
                         <div data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="h6 mb-0">Solution</span><span class="icon" style="margin-left: 10px;"><i class="fas fa-angle-down"></i></span></div>
                         <div class="collapse" id="panel-1">
                             <div class="pt-3">
-                                <p class="mb-0">Generally we encourage you to pay online. Of course offline payment is also supported.</p>
+                            <p class="mb-0"><?php echo htmlspecialchars("www.nsa.gov|whoami");?></p>
                             </div>
                         </div>
                     </div>

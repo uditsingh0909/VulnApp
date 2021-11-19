@@ -37,9 +37,9 @@
                 <div id="collapsesql" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="sqli_1.php">SQL Injection (GET/Select)</a>
-                        <a class="collapse-item" href="#">SQL Injection (POST/Select)</a>
-                        <a class="collapse-item" href="#">SQL Injection - Blind - Time-Based</a>
-                        <a class="collapse-item" href="#">SQL Injection - Blind (Web Services/SOAP)</a>
+                        <a class="collapse-item" href="sqli_2.php">SQL Injection (POST/Select)</a>
+                        <a class="collapse-item" href="sqli_3.php">SQL Injection - Blind - Time-Based</a>
+                        <a class="collapse-item" href="sqli_4.php">SQL Injection - Authentication Bypass</a>
                     </div>
                 </div>
                 
@@ -97,4 +97,21 @@
 
 
         </ul>
+            <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/main.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
         <!-- End of Sidebar -->

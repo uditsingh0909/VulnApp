@@ -72,27 +72,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
             <div class="card shadow mb-4">
                 <div class="card-body">
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    HCTF-VulnApp is a Web application Penetration Testing Environment. The main motive to provide this Lab is that a Student can learn, hack, or Test their skills Of Penetration testing or Secure code development. this Web application or Lab Help Security enthusiasts, developers, and students to discover and prevent web vulnerabilities. <br>For students, it is really important to Learn Secure code development and for cybersecurity enthusiasts to Practice. Every feature of this lab is Vulnerable and can be hacked. We have also categorized the vulnerability in form of a List of pages or levels With Hints to solve and also the final solution So A person can also learn Secure code development and compare it with Vulnerable code
                     </p>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                </div>
-            </div>
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Things which you can do when you are unsure of how to continue:</h6>
-                </div>
-                <div class="card-body">
-                    If you know a command but you don’t know how to use that particular command then try using manual (man page) by typing “man“ (without the quotes <>). Example: If you know about the “ls” command, then type: man ls. Press “q” to quit the man command.
-                        If you don’t find the man page then the command might be a shell built-in. In this case, use the “help“. Example: “help cd“
-                        Lastly, if you are still stuck somewhere make sure you join our discord server.
                 </div>
             </div>
         </div>

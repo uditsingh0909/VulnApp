@@ -59,10 +59,10 @@ function sqli($data)
 
                 <div id="main">
 
-                <h1>SQL Injection (GET/Search)</h1>
+                <h1 style="margin-left: 25px;"><b>SQL Injection (GET/Search)</b></h1>
                     <div class="card shadow mb-4" style="margin-left: 25px; margin-right: 300px;margin-top: 20px;">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">This is just a test page, reflecting back your Message</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Search Movie details</h6>
                         </div>
                         <div class="card-body">
 
@@ -193,18 +193,19 @@ function sqli($data)
                         <br />
                     </div>
                 </div>
-            </div>
-
-            <div class="mb-6">
-                <div class="card card-sm card-body rounded mb-3" style="margin-left: 25px; margin-right: 25px;">
-                    <div data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="h6 mb-0">Solution</span><span class="icon" style="margin-left: 10px;"><i class="fas fa-angle-down"></i></span></div>
-                    <div class="collapse" id="panel-1">
-                        <div class="pt-3">
-                            <p class="mb-0">Generally we encourage you to pay online. Of course offline payment is also supported.</p>
+                <div class="mb-6">
+                    <div class="card card-sm card-body rounded mb-3" style="margin-left: 25px; margin-right: 25px;">
+                        <div data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="h6 mb-0">Solution</span><span class="icon" style="margin-left: 10px;"><i class="fas fa-angle-down"></i></span></div>
+                        <div class="collapse" id="panel-1">
+                            <div class="pt-3">
+                                <p class="mb-0">' or 'a' ='a</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
 
 
             <!-- Bootstrap core JavaScript-->
