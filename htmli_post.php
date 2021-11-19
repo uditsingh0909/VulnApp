@@ -107,9 +107,6 @@ function htmli($data)
     ?>
 
 </div>
-<?php
-                include('footer.php');
-            ?>
 </body>
 
 </html>

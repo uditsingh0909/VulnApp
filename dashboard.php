@@ -119,11 +119,6 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 
 </div>
             <!-- End of Main Content -->
-
-            <?php
-                include('footer.php');
-            ?>
-
         </div>
         <!-- End of Content Wrapper -->
 

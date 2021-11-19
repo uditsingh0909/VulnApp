@@ -1,7 +1,4 @@
         <!-- Sidebar -->
-        <?php 
-         define('BASE_URL', 'http://localhost/HCTF-VulnApp/');
-         ?>
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
@@ -27,7 +24,7 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Interface
+                Vulnerablities
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -60,8 +57,8 @@
                 </a>
                 <div id="collapsehtml" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="/vuln/htmli_get.php">Reflected(GET Method)</a>
-                        <a class="collapse-item" href="/vuln/htmli_post.php">Reflected(POST Method)</a>
+                        <a class="collapse-item" href="htmli_get.php">Reflected(GET Method)</a>
+                        <a class="collapse-item" href="htmli_post.php">Reflected(POST Method)</a>
                         <a class="collapse-item" href="#">Reflected(Current URL)</a>
                         <a class="collapse-item" href="#">Reflected(Blog)</a>
                     </div>
@@ -100,7 +97,6 @@
 
         
 
-            <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
