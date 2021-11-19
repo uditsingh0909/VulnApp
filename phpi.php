@@ -5,7 +5,7 @@ session_start();
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     header("location: login.php");
 }
-function htmli($data)
+function commandi($data)
 {
 
 
@@ -58,45 +58,48 @@ function htmli($data)
 
                 <div id="main">
 
-                    <h1 style="margin-left: 25px;"><b>HTML Injection - Reflected (GET)</b></h1>
-
+                    <h1>PHP Code Injection</h1>
                     <div class="card shadow mb-4" style="margin-left: 25px; margin-right: 300px;margin-top: 20px;">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Enter your first and last name:</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">This is just a test page, reflecting back your Message</h6>
                         </div>
                         <div class="card-body">
-                            <form action="<?php echo ($_SERVER["SCRIPT_NAME"]); ?>" method="GET" style="margin-left: 25px;">
 
-                                <p><label for="firstname">First name:</label><br />
-                                    <input type="text" id="firstname" name="firstname">
-                                </p>
+                        <p> <a href="<?php echo ($_SERVER["SCRIPT_NAME"]); ?>?message=test"></a></p>
+                    <form action="<?php echo ($_SERVER["SCRIPT_NAME"]); ?>" method="GET">
 
-                                <p><label for="lastname">Last name:</label><br />
-                                    <input type="text" id="lastname" name="lastname">
-                                </p>
+                        <p><label for="firstname">Message:</label><br />
+                            <input type="text" id="message" name="message">
+                        </p>
 
-                                <button type="submit" name="form" class="btn btn-primary btn-lg" value="submit">Go</button>
+                        <button type="submit" class="btn btn-primary btn-lg" name="form" value="submit">Go</button>
 
-                            </form>
+                    </form>
+                    <?php
 
+                    if (isset($_REQUEST["message"])) {
 
-                            <?php
+                        // If the security level is not MEDIUM or HIGH
+                        if ($_COOKIE["security_level"] != "1" && $_COOKIE["security_level"] != "2") {
 
-                            if (isset($_GET["firstname"]) && isset($_GET["lastname"])) {
+                    ?>
+                            <p><i><?php @eval("echo " . $_REQUEST["message"] . ";"); ?></i></p>
 
-                                $firstname = $_GET["firstname"];
-                                $lastname = $_GET["lastname"];
+                        <?php
 
-                                if ($firstname == "" or $lastname == "") {
+                        }
 
-                                    echo "<font color=\"red\">Please enter both fields...</font>";
-                                } else {
+                        // If the security level is MEDIUM or HIGH
+                        else {
+                        ?>
+                            <p><i><?php echo htmlspecialchars($_REQUEST["message"], ENT_QUOTES, "UTF-8");; ?></i></p>
 
-                                    echo "Welcome " . htmli($firstname) . " " . htmli($lastname);
-                                }
-                            }
+                    <?php
 
-                            ?>
+                        }
+                    }
+
+                    ?>
 
                             <br />
                         </div>
@@ -108,11 +111,13 @@ function htmli($data)
                         <div data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="h6 mb-0">Solution</span><span class="icon" style="margin-left: 10px;"><i class="fas fa-angle-down"></i></span></div>
                         <div class="collapse" id="panel-1">
                             <div class="pt-3">
-                                <p class="mb-0"><code <script>alert(1)</script>></code></p>
+                                <p class="mb-0">Generally we encourage you to pay online. Of course offline payment is also supported.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
                 <!-- Bootstrap core JavaScript-->
                 <script src="vendor/jquery/jquery.min.js"></script>
                 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

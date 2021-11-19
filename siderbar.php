@@ -36,13 +36,8 @@
                 </a>
                 <div id="collapsesql" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">SQL Injection (GET/Select)</a>
+                        <a class="collapse-item" href="sqli_1.php">SQL Injection (GET/Select)</a>
                         <a class="collapse-item" href="#">SQL Injection (POST/Select)</a>
-                        <a class="collapse-item" href="#">SQL Injection (CAPTCHA)</a>
-                        <a class="collapse-item" href="#">SQL Injection (Login Form/User)</a>
-                        <a class="collapse-item" href="#">SQL Injection (Drupal)</a>
-                        <a class="collapse-item" href="#">SQL Injection - Stored (SQLite)</a>
-                        <a class="collapse-item" href="#">SQL Injection - Stored (XML)</a>
                         <a class="collapse-item" href="#">SQL Injection - Blind - Time-Based</a>
                         <a class="collapse-item" href="#">SQL Injection - Blind (Web Services/SOAP)</a>
                     </div>
@@ -59,7 +54,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="htmli_get.php">Reflected(GET Method)</a>
                         <a class="collapse-item" href="htmli_post.php">Reflected(POST Method)</a>
-                        <a class="collapse-item" href="#">Reflected(Blog)</a>
+                        <a class="collapse-item" href="htmli_stored.php">Stored(Blog)</a>
                     </div>
                 </div>
             </li>
@@ -71,8 +66,8 @@
                 </a>
                 <div id="collapseosc" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Reflected(GET and POST)</a>
-                        <a class="collapse-item" href="#">Blind(GET and POST)</a>
+                        <a class="collapse-item" href="os_cmd_i.php">Reflected(GET and POST)</a>
+                        <a class="collapse-item" href="os_cmd_iblind.php">Blind(GET and POST)</a>
                     </div>
                 </div>
             </li>
@@ -84,7 +79,7 @@
                 </a>
                 <div id="collapsephpc" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Reflected(GET)</a>
+                        <a class="collapse-item" href="phpi.php">Reflected(GET)</a>
                     </div>
                 </div>
             </li>

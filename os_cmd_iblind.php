@@ -5,11 +5,12 @@ session_start();
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     header("location: login.php");
 }
-function htmli($data)
+function commandi($data)
 {
 
 
     return $data;
+
 }
 
 ?>
@@ -58,49 +59,79 @@ function htmli($data)
 
                 <div id="main">
 
-                    <h1 style="margin-left: 25px;"><b>HTML Injection - Reflected (GET)</b></h1>
+                    <h1 style="margin-left: 25px;"><b>OS Command Injection - Blind</b></h1>
 
                     <div class="card shadow mb-4" style="margin-left: 25px; margin-right: 300px;margin-top: 20px;">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Enter your first and last name:</h6>
                         </div>
                         <div class="card-body">
-                            <form action="<?php echo ($_SERVER["SCRIPT_NAME"]); ?>" method="GET" style="margin-left: 25px;">
-
-                                <p><label for="firstname">First name:</label><br />
-                                    <input type="text" id="firstname" name="firstname">
-                                </p>
-
-                                <p><label for="lastname">Last name:</label><br />
-                                    <input type="text" id="lastname" name="lastname">
-                                </p>
-
-                                <button type="submit" name="form" class="btn btn-primary btn-lg" value="submit">Go</button>
-
-                            </form>
 
 
-                            <?php
+                        <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-                            if (isset($_GET["firstname"]) && isset($_GET["lastname"])) {
+<p>
 
-                                $firstname = $_GET["firstname"];
-                                $lastname = $_GET["lastname"];
+<label for="target">Enter your IP address:</label>
+<input type="text" id="target" name="target" value="">
 
-                                if ($firstname == "" or $lastname == "") {
+<button type="submit" name="form" value="submit">PING</button>
 
-                                    echo "<font color=\"red\">Please enter both fields...</font>";
-                                } else {
+</p>
 
-                                    echo "Welcome " . htmli($firstname) . " " . htmli($lastname);
-                                }
-                            }
-
-                            ?>
+</form>
 
                             <br />
                         </div>
                     </div>
+                    <?php
+
+if(isset($_POST["target"]))
+{
+
+    $target = $_POST["target"];
+
+    if($target == "")
+    {
+
+        echo "<font color=\"red\">Please enter your IP address...</font>";
+
+    }
+
+    else
+    {
+
+        echo "Did you captured our GOLDEN packet?";
+
+        if(PHP_OS == "Windows" or PHP_OS == "WINNT" or PHP_OS == "WIN32")
+        {
+
+            // Debugging
+            // echo "Windows!";
+
+            // Increasing the PING count will slow down your web scanner!
+            shell_exec("ping -n 1 " . commandi($target));
+
+        }
+
+        else
+        {
+
+            // Debugging
+            // echo "Not Windows!";
+
+            // Increasing the PING count will slow down your web scanner!
+            shell_exec("ping -c 1 " . commandi($target));
+
+        }
+
+    }
+
+}
+
+?>
+
+
                 </div>
 
                 <div class="mb-6">
@@ -108,11 +139,13 @@ function htmli($data)
                         <div data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="h6 mb-0">Solution</span><span class="icon" style="margin-left: 10px;"><i class="fas fa-angle-down"></i></span></div>
                         <div class="collapse" id="panel-1">
                             <div class="pt-3">
-                                <p class="mb-0"><code <script>alert(1)</script>></code></p>
+                                <p class="mb-0">Generally we encourage you to pay online. Of course offline payment is also supported.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
                 <!-- Bootstrap core JavaScript-->
                 <script src="vendor/jquery/jquery.min.js"></script>
                 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

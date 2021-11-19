@@ -58,7 +58,7 @@ function htmli($data)
 
                 <div id="main">
 
-                <h1 style="margin-left: 25px;"><b>HTML Injection - Reflected (GET)</b></h1>
+                <h1 style="margin-left: 25px;"><b>HTML Injection - Reflected (POST)</b></h1>
 
                     <div class="card shadow mb-4" style="margin-left: 25px; margin-right: 300px;margin-top: 20px;">
                         <div class="card-header py-3">
@@ -79,10 +79,6 @@ function htmli($data)
 
                             </form>
 
-                            <br />
-                        </div>
-                    </div>
-
                     <?php
 
                     if (isset($_GET["firstname"]) && isset($_GET["lastname"])) {
@@ -101,25 +97,18 @@ function htmli($data)
 
                     ?>
 
+<br />
+                        </div>
+                    </div>
+
                 </div>
 
 				<div class="mb-6">
-				<div class="col-sm" align="center">
-            		<h1 style="margin-bottom: 20px;"><b>Frequently Asked Questions</b></h1><hr>
-        		</div>
 					<div class="card card-sm card-body rounded mb-3" style="margin-left: 25px; margin-right: 25px;"> 
-						<div data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="h6 mb-0">How to pay?</span><span class="icon" style="margin-left: 10px;"><i class="fas fa-angle-down"></i></span></div>
+						<div data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="h6 mb-0">Solution</span><span class="icon" style="margin-left: 10px;"><i class="fas fa-angle-down"></i></span></div>
 						<div class="collapse" id="panel-1">
 							<div class="pt-3">
 								<p class="mb-0">Generally we encourage you to pay online. Of course offline payment is also supported.</p>
-							</div>
-						</div>
-					</div>
-					<div class="card card-sm card-body rounded mb-3" style="margin-left: 25px; margin-right: 25px;">
-						<div data-target="#panel-2" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-2"><span class="h6 mb-0">Do I need to pay monthly?</span><span class="icon" style="margin-left: 10px;"><i class="fas fa-angle-down"></i></span></div>
-						<div class="collapse" id="panel-2">
-							<div class="pt-3">
-								<p class="mb-0">No, it's life-time payment.</p>
 							</div>
 						</div>
 					</div>
