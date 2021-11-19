@@ -59,7 +59,6 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="htmli_get.php">Reflected(GET Method)</a>
                         <a class="collapse-item" href="htmli_post.php">Reflected(POST Method)</a>
-                        <a class="collapse-item" href="#">Reflected(Current URL)</a>
                         <a class="collapse-item" href="#">Reflected(Blog)</a>
                     </div>
                 </div>
