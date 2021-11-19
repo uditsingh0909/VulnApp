@@ -6,7 +6,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">HCTF-VulnApp</div>
+                <div class="sidebar-brand-text mx-3">VulnApp</div>
             </a>
 
             <!-- Divider -->
@@ -29,172 +29,69 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseinj"
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsesql"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Injections</span>
+                    <span>SQL Injection</span>
                 </a>
-                <div id="collapseinj" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapsesql" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">HTML Injection</a>
-                        <a class="collapse-item" href="#">Iframe Injection</a>
-                        <a class="collapse-item" href="#">OS Command Injection</a>
-                        <a class="collapse-item" href="#">PHP Code Injection</a>
-                        <a class="collapse-item" href="#">SQL Injection</a>
-                        <a class="collapse-item" href="#">XML/XPath Injection</a>
+                        <a class="collapse-item" href="#">SQL Injection (GET/Select)</a>
+                        <a class="collapse-item" href="#">SQL Injection (POST/Select)</a>
+                        <a class="collapse-item" href="#">SQL Injection (CAPTCHA)</a>
+                        <a class="collapse-item" href="#">SQL Injection (Login Form/User)</a>
+                        <a class="collapse-item" href="#">SQL Injection (Drupal)</a>
+                        <a class="collapse-item" href="#">SQL Injection - Stored (SQLite)</a>
+                        <a class="collapse-item" href="#">SQL Injection - Stored (XML)</a>
+                        <a class="collapse-item" href="#">SQL Injection - Blind - Time-Based</a>
+                        <a class="collapse-item" href="#">SQL Injection - Blind (Web Services/SOAP)</a>
+                    </div>
+                </div>
+                
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsehtml"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>HTML Injection</span>
+                </a>
+                <div id="collapsehtml" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="">Reflected(GET Method)</a>
+                        <a class="collapse-item" href="#">Reflected(POST Method)</a>
+                        <a class="collapse-item" href="#">Reflected(Current URL)</a>
+                        <a class="collapse-item" href="#">Reflected(Blog)</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseosc"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>OS Command Injection</span>
+                </a>
+                <div id="collapseosc" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="#">Reflected(GET and POST)</a>
+                        <a class="collapse-item" href="#">Blind(GET and POST)</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsephpc"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>PHP Code Injection</span>
+                </a>
+                <div id="collapsephpc" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="#">Reflected(GET)</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsebac"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Broken Access Control </span>
-                </a>
-                <div id="collapsebac" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Broken Authentication</a>
-                        <a class="collapse-item" href="#">Session Management</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsexss"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Cross-Site Scripting (XSS)</span>
-                </a>
-                <div id="collapsexss" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Broken Authentication</a>
-                        <a class="collapse-item" href="#">Session Management</a>
-                    </div>
-                </div>
-            </li>            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseinde"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Insecure Design</span>
-                </a>
-                <div id="collapseinde" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Broken Authentication</a>
-                        <a class="collapse-item" href="#">Session Management</a>
-                    </div>
-                </div>
-            </li>            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsesecm"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Security Misconfiguration</span>
-                </a>
-                <div id="collapsesecm" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Broken Authentication</a>
-                        <a class="collapse-item" href="#">Session Management</a>
-                    </div>
-                </div>
-            </li>            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsesde"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Sensitive Data Exposure</span>
-                </a>
-                <div id="collapsesde" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Broken Authentication</a>
-                        <a class="collapse-item" href="#">Session Management</a>
-                    </div>
-                </div>
-            </li>            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsemf"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Missing Functional Level Access Control</span>
-                </a>
-                <div id="collapsemf" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Broken Authentication</a>
-                        <a class="collapse-item" href="#">Session Management</a>
-                    </div>
-                </div>
-            </li>            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsecsrf"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Cross-Site Request Forgery (CSRF)</span>
-                </a>
-                <div id="collapsecsrf" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Broken Authentication</a>
-                        <a class="collapse-item" href="#">Session Management</a>
-                    </div>
-                </div>
-            </li>            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseukv"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Using Known Vulnerable Components</span>
-                </a>
-                <div id="collapseukv" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Broken Authentication</a>
-                        <a class="collapse-item" href="#">Session Management</a>
-                    </div>
-                </div>
-            </li>            
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseurf"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Unvalidated Redirects & Forwards</span>
-                </a>
-                <div id="collapseurf" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Broken Authentication</a>
-                        <a class="collapse-item" href="#">Session Management</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseob"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Other bugs...</span>
-                </a>
-                <div id="collapseob" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Broken Authentication</a>
-                        <a class="collapse-item" href="#">Session Management</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseextra"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Extras</span>
-                </a>
-                <div id="collapseextra" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Broken Authentication</a>
-                        <a class="collapse-item" href="#">Session Management</a>
-                    </div>
-                </div>
-            </li>
+
+     
             <!-- Divider -->
             <hr class="sidebar-divider">
 

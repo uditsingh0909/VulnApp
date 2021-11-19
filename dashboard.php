@@ -58,7 +58,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
             <div class="container">
   <div class="row">
     <div class="col-sm">
-    <h1 style="margin-top: 50px"><b>HCTF-VulnApp</b></h1>
+    <h1 style="margin-top: 50px"><b>VulnApp</b></h1>
     <p>Web application vulnerablities based CTF Lab. to Learn and enhance your pentesting skills.</p>
     </div>
     <div class="col-sm">
