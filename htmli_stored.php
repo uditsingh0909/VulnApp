@@ -46,7 +46,7 @@ if (isset($_POST["entry_add"])) {
 
     if (isset($_POST["entry_delete"])) {
 
-        $sql = "DELETE from blog WHERE owner = '" . $_SESSION["login"] . "'";
+        $sql = "DELETE from blog WHERE owner = '" . $_SESSION["username"] . "'";
 
         $recordset = $link->query($sql);
 
@@ -189,7 +189,7 @@ if (isset($_POST["entry_add"])) {
 
                     if ($entry_all == false) {
 
-                        $sql = "SELECT * FROM blog WHERE owner = '" . $_SESSION["login"] . "'";
+                        $sql = "SELECT * FROM blog WHERE owner = '" . $_SESSION["username"] . "'";
                     } else {
 
                         $sql = "SELECT * FROM blog";

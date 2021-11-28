@@ -28,9 +28,9 @@ if (isset($_REQUEST["title"])) {
 
         $movie = $row["title"];
 
-        $login = $_SESSION["login"];
+        $username = $_SESSION["username"];
 
-        $sql = "SELECT email FROM users WHERE login = '" . $login . "'";
+        $sql = "SELECT email FROM users WHERE username = '" . $username . "'";
 
         $recordset = mysqli_query($link, $sql);
 
@@ -47,7 +47,7 @@ if (isset($_REQUEST["title"])) {
         $subject = "bWAPP - Movie Search";
         $sender = $smtp_sender;
 
-        $content = "Hello " . ucwords($login) . ",\n\n";
+        $content = "Hello " . ucwords($username) . ",\n\n";
         $content .= "The movie \"" . $movie . "\" exists in our database." . "\n\n";
         $content .= "Greets from bWAPP!";
 

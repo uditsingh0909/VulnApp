@@ -70,8 +70,8 @@ function sqli($data)
 
                             <form action="<?php echo ($_SERVER["SCRIPT_NAME"]); ?>" method="POST">
 
-                                <p><label for="login">Login:</label><br />
-                                    <input type="text" id="login" name="login" size="20" autocomplete="off" />
+                                <p><label for="username">Login:</label><br />
+                                    <input type="text" id="username" name="username" size="20" autocomplete="off" />
                                 </p>
 
                                 <p><label for="password">Password:</label><br />
@@ -87,14 +87,14 @@ function sqli($data)
 
                             if (isset($_POST["form"])) {
 
-                                $login = $_POST["login"];
+                                $username = $_POST["username"];
                                 $password = $_POST["password"];
                                 $password = hash("sha1", $password, false);
-                                $sql = "SELECT * FROM users WHERE login='$login' AND password='$password'";
+                                $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
                                 $result = mysqli_query($link, $sql);
                                 $row = mysqli_num_rows($result);
                                 if ($row>0) {
-                                        printf("Welcome " . $login);
+                                        printf("Welcome " . $username);
                                     }
                                     else{
                                         printf("Wrong Credentials");
