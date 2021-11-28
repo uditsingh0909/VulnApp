@@ -26,7 +26,7 @@ function commandi($data)
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HackerCTF - Dashboard</title>
+    <title>VulnApp - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

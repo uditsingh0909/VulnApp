@@ -370,7 +370,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 		  <h6 class="m-0 font-weight-bold text-primary">Change Password</h6>
         </div>
         <div class="card-body">
-		  <form action="https://app.hackerctf.com/user/change_password_action/" method="POST" accept-charset="utf-8">
+		  <form action="https://app.VulnApp.com/user/change_password_action/" method="POST" accept-charset="utf-8">
                                                                                                                           <input type="hidden" name="csrf_test_name" value="6a4cd40ddc0649065e615c20c57613bc" />
 		  <div class="row form-group mb-4">
 		    <div class="col-lg-6">
