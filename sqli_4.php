@@ -3,7 +3,7 @@
 session_start();
 
 
-include("connect.php");
+include("config.php");
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     header("location: login.php");
 }
@@ -92,6 +92,7 @@ function sqli($data)
                                 $password = hash("sha1", $password, false);
                                 $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
                                 $result = mysqli_query($link, $sql);
+                                echo $password;
                                 $row = mysqli_num_rows($result);
                                 if ($row>0) {
                                         printf("Welcome " . $username);

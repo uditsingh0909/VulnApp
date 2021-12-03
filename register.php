@@ -68,7 +68,7 @@ if(empty($username_err) && empty($email_err) && empty($password_err) && empty($c
 
         // Set these parameters
         $param_username = $username;
-        $param_password = password_hash($password, PASSWORD_DEFAULT);
+        $param_password = hash('sha1',$password);
         $param_email = $_POST['email'];
 
         // Try to execute the query
