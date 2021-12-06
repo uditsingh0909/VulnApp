@@ -7,13 +7,24 @@ include("config.php");
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     header("location: login.php");
 }
-$message = "";
 
-function sqli($data)
+if(!(isset($_GET["ParamUrl"])) || !(isset($_GET["ParamHeight"])) || !(isset($_GET["ParamWidth"])))
 {
-    return $data;
+
+    header("Location: iframei.php?ParamUrl=robots.txt&ParamWidth=250&ParamHeight=250");
+
+    exit;
+
 }
 
+function xss($data)
+{
+
+   
+
+    return $data;
+
+}
 
 ?>
 
@@ -59,57 +70,18 @@ function sqli($data)
                 ?>
 
 
-                <div id="main">
 
-                    <h1 style="margin-left: 25px;"><b>SQL Injection - Login Bypass</b></h1>
-                    <div class="card shadow mb-4" style="margin-left: 25px; margin-right: 300px;margin-top: 20px;">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Enter your credentials</h6>
-                        </div>
-                        <div class="card-body">
+<div id="main">
 
-                            <form action="<?php echo ($_SERVER["SCRIPT_NAME"]); ?>" method="POST">
-
-                                <p><label for="username">Login:</label><br />
-                                    <input type="text" id="username" name="username" size="20" autocomplete="off" />
-                                </p>
-
-                                <p><label for="password">Password:</label><br />
-                                    <input type="password" id="password" name="password" size="20" autocomplete="off" />
-                                </p>
-
-                                <button type="submit" name="form" value="submit">Login</button>
-
-                            </form>
-
-                            <br />
-                            <?php
-
-                            if (isset($_POST["form"])) {
-
-                                $username = $_POST["username"];
-                                $password = $_POST["password"];
-                                $password = hash("sha1", $password, false);
-                                $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-                                $result = mysqli_query($link, $sql);
-                                
-                                $row = mysqli_num_rows($result);
-                                if ($row>0) {
-                                        printf("Welcome " . $username);
-                                    }
-                                    else{
-                                        printf("Wrong Credentials");
-                                    mysqli_free_result($result);
-                                }
-                            }
-                            ?>
-
-                        </div>
+    <h1>iFrame Injection</h1>
 
 
-                        <br />
-                    </div>
-                </div>
+    <iframe frameborder="0" src="robots.txt" height="<?php echo xss($_GET["ParamHeight"])?>" width="<?php echo xss($_GET["ParamWidth"])?>"></iframe>
+
+
+</div>
+
+</div>
                 <div class="mb-6">
                     <div class="card card-sm card-body rounded mb-3" style="margin-left: 25px; margin-right: 25px;">
                         <div data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="h6 mb-0">Solution</span><span class="icon" style="margin-left: 10px;"><i class="fas fa-angle-down"></i></span></div>
