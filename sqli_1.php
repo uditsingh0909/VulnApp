@@ -84,7 +84,7 @@ function sqli($data)
 
                             <table id="table_yellow">
 
-                                <tr height="30" bgcolor="#cc0000" align="center">
+                                <tr height="30" bgcolor="#9936f3" align="center">
 
                                     <td width="200"><b>Title</b></td>
                                     <td width="80"><b>Release</b></td>

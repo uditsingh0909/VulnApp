@@ -172,7 +172,7 @@ if (isset($_POST["entry_add"])) {
 
                 <table id="table_yellow">
 
-                    <tr height="30" bgcolor="#cc0000" align="center">
+                    <tr height="30" bgcolor="#9936f3" align="center">
 
                         <td width="20">#</td>
                         <td width="100"><b>Owner</b></td>
