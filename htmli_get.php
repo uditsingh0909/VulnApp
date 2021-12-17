@@ -25,7 +25,7 @@ function htmli($data)
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>VulnApp - Dashboard</title>
+    <title>Upgrademore lab - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

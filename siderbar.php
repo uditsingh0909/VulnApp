@@ -6,7 +6,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">VulnApp</div>
+                <div class="sidebar-brand-text mx-3">pentesting lab</div>
             </a>
 
             <!-- Divider -->

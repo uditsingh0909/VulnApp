@@ -20,7 +20,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>VulnApp - Dashboard</title>
+    <title>Upgrademore pentesting lab - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
